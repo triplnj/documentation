@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --first-color: hsl(0, 66%, 78%);
+  --second-color: hsl(22, 51%, 48%);
+  --third-color: hsl(78, 44%, 53%);
+  --text-color: hsl(0, 0%, 100%);
+  --header-one: hsl(234, 78%, 61%);
+  --color-transit: 500ms;
+}
+
+h1,
+h2,
+article {
+  padding: 3rem;
+}
+
+h1:hover {
+  background-color: var(--header-one);
+  transition: var(--color-transit);
+  color: var(--text-color);
+  display: grid;
+}
+p {
+  padding: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(15px + 0.6vw);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  background-color: bisque;
+  height: 2rem;
+  line-height: 2rem;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  color: hsl(39, 91%, 38%);
+  margin-right: 10px;
+}
+nav a:hover {
+  background-color: hsl(0, 59%, 41%);
+  color: hsl(0, 0%, 100%);
+}
+#first-article:hover {
+  background-color: var(--first-color);
+}
+#second-article:hover {
+  background-color: var(--second-color);
+}
+#third-article:hover {
+  background-color: var(--third-color);
+}
+.colors {
+  color: var(--text-color);
+  transition: var(--color-transit);
+}
