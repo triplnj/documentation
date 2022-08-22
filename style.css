@@ -10,6 +10,7 @@
   --text-color: hsl(0, 0%, 100%);
   --header-one: hsl(234, 78%, 61%);
   --color-transit: 500ms;
+  --header-size: 3rem;
 }
 
 h1,
@@ -23,6 +24,7 @@ h1:hover {
   transition: var(--color-transit);
   color: var(--text-color);
   display: grid;
+  font-size: var(--header-size);
 }
 p {
   padding: 2rem;
